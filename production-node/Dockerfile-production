@@ -1,0 +1,7 @@
+FROM openjdk:17-jre-slim
+
+WORKDIR /app
+
+COPY production.jar .
+
+CMD ["java", "-jar", "production.jar"]

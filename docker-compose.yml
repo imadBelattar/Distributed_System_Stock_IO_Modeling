@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  stock:
+    build:
+      context: ./stock-node  
+      dockerfile: Dockerfile-stock 
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  production:
+    build:
+      context: ./production-node  
+      dockerfile: Dockerfile-production  
+    networks:
+      - app-network
+    depends_on:
+      - stock
+
+  delivery:
+    build:
+      context: ./delivery-node  
+      dockerfile: Dockerfile-delivery  
+    networks:
+      - app-network
+    depends_on:
+      - stock
+
+networks:
+  app-network:
+    driver: bridge

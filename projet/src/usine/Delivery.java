@@ -30,7 +30,7 @@ public class Delivery {
     }
 
     public static void main(String[] args) {
-        Delivery delivery = new Delivery("stock_node", 1010);  // stock_node is the Docker node name
+        Delivery delivery = new Delivery("stock", 8080);  // stock_node is the Docker node name
         int[] seconds = {1, 2, 3, 4, 5, 6};
         Random random = new Random();
 

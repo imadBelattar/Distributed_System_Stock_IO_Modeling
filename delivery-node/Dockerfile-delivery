@@ -1,0 +1,7 @@
+FROM openjdk:17-jre-slim
+
+WORKDIR /app
+
+COPY delivery.jar .
+
+CMD ["java", "-jar", "delivery.jar"]

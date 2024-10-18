@@ -1,0 +1,7 @@
+FROM openjdk:17-jre-slim
+
+WORKDIR /app
+
+COPY stock.jar .
+
+CMD ["java", "-jar", "stock.jar"]
