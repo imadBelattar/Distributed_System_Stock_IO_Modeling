@@ -6,11 +6,13 @@ The project uses Java to handle the communication between containers, simulating
 
 ### Key Features:
 
-        - Simple simulation of distributed system communication
-        - Java for simulating message exchange (send/receive)
-        - Docker containers representing system nodes and components
-        - Visualization of message flow in a distributed system
+- Simple simulation of distributed system communication
+- Java for simulating message exchange (send/receive)
+- Docker containers representing system nodes and components
+- Visualization of message flow in a distributed system
 
-<div style="padding: 10px; border-left: 4px solid green; background-color: #f0f0f0;">
-    This <b>project</b> serves as a foundational demonstration of distributed systems concepts using modern tools like Docker and Java for communication and modeling.
-</div>
+
+
+
+> This <b>project</b> serves as a foundational demonstration of distributed systems concepts using modern tools like Docker and Java for communication and modeling.
+
