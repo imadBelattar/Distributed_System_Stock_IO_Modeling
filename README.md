@@ -17,3 +17,16 @@ The project uses **Java** to handle the communication between containers, simula
 #### Flow illustration:
 
 ![Flow Illustration](figures/1.png)
+
+
+#### Project Execution:
+
+After running `docker-compose up`, Docker will build the necessary images for the Stock, Production, and Delivery nodes, and create containers based on those images. Once the containers are up and running, they begin interacting with each other.
+
+The `production` container continuously sends `PRODUCE` messages to the `stock` container, signaling the addition of new cartons to the stock. At the same time, the `delivery` container sends `DELIVER` messages to the `stock` container, requesting cartons for delivery.
+
+The terminal output will show a log of the messages being sent and received between the containers. For example, the log displays the stock receiving cartons from production and delivering cartons based on the delivery requests. The stock level is adjusted accordingly after each operation, and the interaction continues in a loop.
+
+Here is an illustration of the project execution:
+
+![Execution Log](figures/2.png)
